@@ -1,4 +1,3 @@
-use indoc::indoc;
 use std::{
     fs::{File, OpenOptions},
     io::Write,
@@ -20,6 +19,7 @@ pub fn part_two(input: &str) -> Option<String> {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use indoc::indoc;
 
     #[test]
     fn test_part_one() {
