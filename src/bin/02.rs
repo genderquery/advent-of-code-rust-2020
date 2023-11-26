@@ -91,14 +91,14 @@ mod parser {
 }
 
 #[derive(Debug, PartialEq, Eq, Clone, Copy)]
-struct PasswordPolicy {
+pub struct PasswordPolicy {
     letter: char,
     min: u8,
     max: u8,
 }
 
 #[derive(Debug, PartialEq, Eq, Clone)]
-struct PasswordEntry {
+pub struct PasswordEntry {
     password: String,
     policy: PasswordPolicy,
 }
