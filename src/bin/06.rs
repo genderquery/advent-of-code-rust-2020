@@ -1,4 +1,4 @@
-use std::collections::{HashMap, HashSet};
+use std::collections::HashSet;
 
 advent_of_code::solution!(6);
 
@@ -38,15 +38,47 @@ mod tests {
 
     #[test]
     fn test_part_one() {
-        const INPUT: &str = indoc! {""};
-        let result = part_one(INPUT);
-        assert_eq!(result, None);
+        const INPUT: &str = indoc! {"
+            abc
+
+            a
+            b
+            c
+
+            ab
+            ac
+
+            a
+            a
+            a
+            a
+
+            b
+        "};
+        let result = part_one(INPUT).unwrap();
+        assert_eq!(result, "11");
     }
 
     #[test]
     fn test_part_two() {
-        const INPUT: &str = indoc! {""};
-        let result = part_two(INPUT);
-        assert_eq!(result, None);
+        const INPUT: &str = indoc! {"
+            abc
+
+            a
+            b
+            c
+
+            ab
+            ac
+
+            a
+            a
+            a
+            a
+
+            b
+        "};
+        let result = part_two(INPUT).unwrap();
+        assert_eq!(result, "6");
     }
 }
